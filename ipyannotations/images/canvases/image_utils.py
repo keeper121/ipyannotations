@@ -139,7 +139,7 @@ def fit_image(
         width and height.
     """
     img_width, img_height = Image.open(io.BytesIO(img.value)).size
-    canvas_width, canvas_height = canvas.size
+    canvas_width, canvas_height = canvas.width, canvas.height
 
     height_ratio, width_ratio = (
         img_height / canvas_height,
